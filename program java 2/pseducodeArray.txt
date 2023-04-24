@@ -1,0 +1,15 @@
+Pseducode menghitung rata dr n data
+1. mulai
+2. int i, jml
+3. input (jml)
+4. int [] nilai = new int [jml+1] 
+5. double totalnilai=0, ratanilai 
+6. for(i=1;i<=jml;i++)
+   {input(nilai[i])}
+7. for(i=1;i<=jml;i++)
+   {totalnilai=totalnilai+nilai[i]}
+8. ratanilai=totalnilai/jml   
+9. for(i=1;i<=jml;i++)
+   {output(nilai[i])}
+10.output(ratanilai)
+11.selesai

@@ -1,0 +1,78 @@
+METHOD
+
+//struktur method
+	modifier returnType namaMethod (Parameter List)
+	{
+	  method body
+	}
+			*modifier- untuk menentukan hak akses terhadap method
+			*returnType- jenis method, ada 2: method void dan method returnType
+			*namaMethod- nama method, sesuai keinginan
+			*Parameter- untuk mengoper sebuah nilai (opsional)
+	
+
+//bentuk method
+	public void cetakPesan()
+	{
+		System.out.println();
+	}
+	
+
+	#1 Method Void (tanpa nilai kembali)
+		contoh:
+		public class MethodVoid
+		{
+			public static String tulisan ="Halo";
+		
+			public static void cetakTulisan()
+			{
+				System.out.println(tulisan);
+			}
+		
+			public static void cetakNama(String nama)
+			{
+				System.out.println("nama saya"+nama);
+			}
+		
+			public static void main(String[] args
+			{
+				cetakTulisan();
+				cetakNama("Mika Abigael");
+			}
+		}
+		*keyword static berfungsi agar variabel atau method yg dibuat dapat lansung digunakan di program utama 
+		*nama kelas: MethodVoid, pertama kita deklarasaikan tulisan dengan tipe data String.
+		*method void bernama cetakTulisan dan cetakNama. Yang menmbedakan adalah penggunaan parameter pada method cetakNama.
+		
+		
+	#2 Method dengan Return Value
+		arti return = mengembalikan sebuah nilai pada fungsi atau method.
+		contoh:
+		public class MethodReturn
+		{
+			public static String nama = "Mika Abigael";
+			
+			public static String getNama()
+			{
+			return nama;
+			}
+			
+			public static int hitungUmur(int lahir, int sekarang)
+			{
+				int umur=sekarang-lahir;
+				return umur;
+			}
+			
+			public static void main(Strinf[] args)
+			{
+				String namaSaya= getNama();
+				System.our.println("nama saya"+namaSaya);
+				
+				int umurSaya=hitungUmur(2002,2021);
+				System.out.println("Umur saya:"+UmurSaya);
+			}
+		}
+		
+		*nama kelas MethodReturn, deklarasi variabel nama dan method getNama() juga method hitungUmur().
+		*funsi return adalah untuk mengembalikan nilai ke dalan fungsi itu sendiri. nilai yang dikembalikan akan disimpan dalam nama method.
+		

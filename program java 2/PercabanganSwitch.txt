@@ -1,0 +1,14 @@
+import java.util.Scanner;   //Import the Scanner class
+class PercabanganSwitch {
+     public static void main(String[] abc) {
+         Scanner masukan = new Scanner(System.in); //Create a Scanner object
+         //bagian deklarasi
+         int pilih;
+         //bagian input
+         System.out.print(" Masukan Pilihan Anda  :");
+         pilih = masukan.nextInt();  masukan.nextLine(); //Read user input
+         switch(pilih)
+         {
+             case 1: System.out.println("Pilih satu "); break;
+
+         }

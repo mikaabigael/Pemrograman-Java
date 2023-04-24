@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Engine;
+
+public class ChangeColor : MonoBehavior
+{
+	//Start is called before the first update 
+	public void Blue()
+	{
+		GetComponent<Renderer>().material.color=Color.blue;
+	}
+	public void Black()
+	{
+		GetComponent<Renderer>().material.color=Color.black;
+	}
+	public void Green()
+	{
+		GetComponent<Renderer>().material.color=Color.green;
+	}
+	
+	
+}
